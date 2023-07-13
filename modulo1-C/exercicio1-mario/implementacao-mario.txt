@@ -1,0 +1,67 @@
+Exercício 1: Mario (versão fácil)
+
+
+Mundo 1-1
+Perto do final do Mundo 1-1 no Super Mario Brothers da Nintendo, Mario deve ascender a pirâmide de blocos
+alinhada à direita, como demonstrado abaixo.
+
+Vamos recriar essa pirâmide em C, ainda que em texto, usando hashes ( # ) para tijolos, como visto a seguir.
+Cada hash é um pouco mais alto do que largo, então a pirâmide em si também é mais alta do que larga.
+
+       #
+      ##
+     ###
+    ####
+   #####
+  ######
+ #######
+########
+
+O programa que escreveremos se chamará mario. E vamos permitir que o usuário decida qual deve ser a altura da pirâmide,
+primeiro solicitando um número inteiro positivo entre, digamos, 1 e 8, inclusive.
+
+Veja como o programa pode funcionar se o usuário inserir 8 quando solicitado:
+
+$ ./mario
+Tamanho: 8               
+       #
+      ##
+     ###
+    ####
+   #####
+  ######
+ #######
+########
+Veja como o programa pode funcionar se o usuário inserir 4 quando solicitado:
+
+$ ./mario
+Tamanho: 4               
+   #
+  ##
+ ###
+####
+Veja como o programa pode funcionar se o usuário inserir 2 quando solicitado:
+
+$ ./mario
+Tamanho: 2               
+ #
+##
+Veja como o programa pode funcionar se o usuário inserir 1 quando solicitado:
+
+$ ./mario
+Tamanho: 1               
+#
+Se o usuário não inserir, de fato, um número inteiro positivo entre 1 e 8, inclusive, quando solicitado,
+o programa deve solicitar novamente ao usuário até que ele coopere:
+
+$ ./mario
+Tamanho: -1               
+Tamanho: 0               
+Tamanho: 42               
+Tamanho: 9
+               
+Tamanho: 4               
+   #
+  ##
+ ###
+####
